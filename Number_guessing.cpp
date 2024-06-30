@@ -1,12 +1,12 @@
 #include <iostream>
-#include <cstdlib> // For rand() and srand()
-#include <ctime>   // For time()
+#include <cstdlib>
+#include <ctime> 
 
 using namespace std;
 
 int main() {
-    srand(time(0)); // Seed the random number generator with current time
-    int secretNumber = rand() % 100 + 1; // Generate a random number between 1 and 100
+    srand(time(0)); 
+    int secretNumber = rand() % 100 + 1;
     int guess;
     int attempts = 0;
 
